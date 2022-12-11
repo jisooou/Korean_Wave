@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+/*-----공통 부분-----*/
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+}
+body{
+    font-family: Arial,'Times New Roman', serif, monospace;
+    line-height: 2;
+    color: black;
+}
+img{
+    max-width: 100%;
+}
+
+/*-----menu 버튼-----*/
+a:link, a:visited, a:active{
+    text-decoration: none;
+    color: black;
+    font-size:larger;
+    margin: 5px;
+}
+a:hover{
+    color: rgb(106, 168, 210);
+}
+
+/*-----index.html 배경 이미지-----*/
+.home_image img{
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+/*-----index.html -----*/
+.big-bg{
+    max-width: 1500px;
+    margin:0 auto;
+    position: relative;
+}
+li{
+    list-style-type: none;
+}
+header{
+    position: relative;
+    height: 70px;
+}
+.logo{
+    width: 230px;
+    margin-top: 18px;
+}
+header .menu{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+header .menu li{
+    display: inline-block;
+    margin: 5px 0 0 50px;
+}
+
+/*-----index.html columns부분-----*/
+.column{
+    padding-left: 20px;
+}
+.column li{
+    font-family: Times;
+    float: left; padding: 30px;
+}
+.column img{
+    max-width: 100%;
+    width: 75px;
+}
+.column p{
+    font-family: Times;
+    margin-top: 2px; line-height: 120%;
+}
+
+/*-----food.html-----*/
+
+/*-----grid부분-----*/
+.grid{
+    font-family: Times;
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-left: 5%;
+}
+
+/*-----food form부분-----*/
+form{
+    font-family: Times;
+    margin-top: 50px;
+    margin-left: 140px;
+}
+
+/*---------attraction.html aside 부분-------*/
+.sub-title{
+    font-size: 1.4rem;
+    font-family: Times;
+    padding: 0 8px 8px;
+    border-bottom: 2px rgb(19, 13, 132) solid;
+    font-weight: normal;
+}
+aside{
+    padding-top: 7%;
+    width: 25%;
+    float: right;
+}
+aside p{
+    font-family: Times;
+    padding: 20px 10px;
+}
+.sub-menu{
+    margin-bottom: 60px;
+    list-style: none;
+}
+.sub-menu li{
+    border-bottom: 1px rgb(150, 168, 227) solid;
+}
+.sub-menu a{
+    font-family: Times;
+    color: rgb(85, 90, 90);
+    padding: 10px;
+    display: block;
+}
+.sub-menu a:hover{
+    color: rgb(86, 191, 233);
+}
+
+/*-----attraction article 부분-----*/
+article{
+    width: 75%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.post-info{
+    position: relative;
+    padding-top: 4px;
+    margin-bottom: 40px;
+}
+.postsub-title{
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Times;
+    color: rgb(85,90,90);
+}
+.post-title{
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: Times;
+}
+article img{
+    margin-bottom: 20px;
+}
+article p{
+    font-size:large;
+    font-family: Times;
+    margin-bottom: 1rem;
+}
+
+/*-----kpop.html 배경이미지-----*/
+#kpop{
+    background-image: url(../images/kpop.png);
+    min-height: 100vh;
+}
+.all-bg{
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/*-----kpop 배경타이틀-----*/
+#kpop.kpop-title{
+    text-transform: none;
+}
+.kpop-content{
+    color: rgb(23, 10, 87);
+    font-family: Times;
+    font-size: large;
+    text-align: center;
+    margin-top: 7%;
+    position: relative;
+}
+.kpop-content p{
+    margin: 10px 0 42px;
+}
+
+/*-----kpop.html 버튼-----*/
+.kpop-button{
+    background: rgb(189, 239, 115);
+
+    border-radius: 13px;
+    padding: 20px 33px;
+}
+.kpop-button:hover{
+    background: rgb(12, 166, 12);
+}
+.kpop-content a{
+    font-family: Times;
+}
+.kpop-content a:hover{
+    color: white;
+}
+
+/*-----kpop2.html flex-box-----*/
+.flex-box{
+    display: flex;
+    flex-direction: row;
+    padding-top: 7%;
+    text-align: center;
+    font-family: Times;
+}
+.kpop-box{
+   margin-right: 10px;
+   margin-left: 10px;
+   background-color: rgb(143, 187, 226);
+}
+
+/*-----kpop2.html form부분-----*/
+.kpop2-form{
+    position:relative;
+    margin-top: 150px;
+    margin-left: 15px;
+}
+select{
+    width: 200px;
+}
+
+/*-----kpop2.html iframe-----*/
+iframe{
+    position:relative;
+    margin-top: 80px;
+    margin-bottom: 300px;
+    margin-left: 10px;
+}
+
+/*-----footer 부분-----*/
+footer{
+    background:rgba(1, 13, 46, 0.873);
+    text-align: center;
+    padding: 20px 0;
+}
+footer p{
+    color: white;
+    font-size: 1rem;
+}
